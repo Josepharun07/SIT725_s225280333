@@ -1,7 +1,11 @@
 {
   "name": "sit725-2025-t3-prac3",
   "version": "1.0.0",
-  "description": "",
+  "description": "sit 725 week 3 prac",
+  "main" : "server.js",
+  "scripts": {
+"start": "node server.js"
+},
   "homepage": "https://github.com/Josepharun07/SIT725_s225280333#readme",
   "bugs": {
     "url": "https://github.com/Josepharun07/SIT725_s225280333/issues"
@@ -10,14 +14,19 @@
     "type": "git",
     "url": "git+https://github.com/Josepharun07/SIT725_s225280333.git"
   },
-  "license": "ISC",
+  "keywords": [
+"Nodejs",
+"Express",
+"Materialize",
+"HTML",
+"JS",
+"CSS"
+],
+  "license": "MIT",
   "author": "Arun Joseph",
   "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
     "express": "^5.1.0"
   }
 }
+
