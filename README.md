@@ -17,7 +17,7 @@ To run the latest submission (Task 2.2P):
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Josepharun07/SIT725_s225280333.git](https://github.com/Josepharun07/SIT725_s225280333.git)
+    git clone https://github.com/Josepharun07/SIT725_s225280333.git
     ```
 2.  **Install dependencies:**
     ```bash
