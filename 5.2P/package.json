@@ -1,0 +1,24 @@
+{
+  "name": "5.2p",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Arun Joseph",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josepharun07/SIT725_s225280333.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Josepharun07/SIT725_s225280333/issues"
+  },
+  "homepage": "https://github.com/Josepharun07/SIT725_s225280333#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "description": ""
+}
