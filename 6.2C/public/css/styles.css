@@ -1,20 +1,58 @@
-.navbar-size {
-width: 95%;
-margin: 0 auto;
-}
-.user-image-size{
-height: 40px; 
-width: 40px; 
-border-radius: 50%; 
-object-fit: cover; 
-}
-.main-body {
-background-color: #ffffff;
-color: rgb(0, 0, 0);
-height: calc(100vh - 64px);
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.click-me-button {
-background-color: #000000;
-margin-top: 50px;
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input#result {
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
