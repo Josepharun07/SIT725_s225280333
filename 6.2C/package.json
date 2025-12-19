@@ -1,0 +1,28 @@
+{
+  "name": "Task_6.2C",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Josepharun07/sit725-2025-t3-prac6#readme",
+  "bugs": {
+    "url": "https://github.com/Josepharun07/sit725-2025-t3-prac6/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Josepharun07/sit725-2025-t3-prac6.git"
+  },
+  "license": "MIT",
+  "author": "Arun Joseph",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "chai": "^6.2.1",
+    "express": "^5.2.1",
+    "mocha": "^11.7.5",
+    "mongodb": "^7.0.0",
+    "request": "^2.88.2"
+  }
+}
