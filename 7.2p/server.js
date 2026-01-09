@@ -5,26 +5,34 @@ const io = require('socket.io')(http);
 
 app.use(express.static(__dirname + '/public'));
 
-
 let activeConnections = 0;
 let connectionHistory = 0; 
 
 io.on('connection', (socket) => {
     activeConnections++;
-    connectionHistory++; 
+    connectionHistory++;
     
-    const thisClientNumber = connectionHistory;
 
-    console.log(`Client #${thisClientNumber} connected. Total active: ${activeConnections}`);
+    const clientId = connectionHistory;
+
+    console.log(`Client ${clientId} connected. Total: ${activeConnections}`);
+
 
     io.emit('updateTotal', activeConnections);
+    socket.emit('yourID', clientId);
 
-    socket.emit('yourID', thisClientNumber);
+
+    socket.on('sendMsg', (msg) => {
+
+        io.emit('receiveMsg', {
+            id: clientId,
+            text: msg
+        });
+    });
 
     socket.on('disconnect', () => {
         activeConnections--;
-        console.log(`Client #${thisClientNumber} disconnected. Total active: ${activeConnections}`);
-        
+        console.log(`Client ${clientId} disconnected.`);
         io.emit('updateTotal', activeConnections);
     });
 });

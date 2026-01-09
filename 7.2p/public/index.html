@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SIT 725 Task 7.2P</title>
+    <title>SIT 725 Task 7.2P Chat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,14 +10,24 @@
     <div class="card">
         <h1>SIT 725 Task 7.2P</h1>
         
-        <div class="stat">
-            <span>Total Connected:</span>
-            <span id="totalCount" class="number">0</span>
+        <div class="stats-container">
+            <div class="stat">
+                <span>Total Connected:</span>
+                <span id="totalCount" class="number">0</span>
+            </div>
+            <div class="stat">
+                <span>Your Client Number:</span>
+                <span id="myID" class="number">...</span>
+            </div>
         </div>
 
-        <div class="stat">
-            <span>Your Client Number:</span>
-            <span id="myID" class="number">...</span>
+        <div class="chat-section">
+            <div id="messages"></div>
+            
+            <div class="input-area">
+                <input id="msgInput" type="text" placeholder="Type a message..." autocomplete="off">
+                <button onclick="sendMessage()">Send</button>
+            </div>
         </div>
     </div>
 
